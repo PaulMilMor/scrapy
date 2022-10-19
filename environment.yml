@@ -1,0 +1,7 @@
+name: scrapy
+channels:
+  - defaults
+dependencies:
+  - autopep8
+  - scrapy
+prefix: /home/paulmilmor/anaconda3/envs/scrapy
