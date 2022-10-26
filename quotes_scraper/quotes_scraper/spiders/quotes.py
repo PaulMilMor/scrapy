@@ -30,7 +30,12 @@ class QuotesSpider(scrapy.Spider):
                     'export_empty_fields': True
                 }
             }
-        }
+        },
+        'CONCURRENT_REQUESTS': 24,
+        'MEMUSAGE_LIMIT_MB': 2048,
+        'MEMUSAGE_NOTIFY_MAIL': [''],
+        'ROBOTSTXT_OBEY': True,
+        'USER_AGENT': 'PepitoMartinez'
     }
 
     def parse_only_quotes(self, response, **kwargs):
